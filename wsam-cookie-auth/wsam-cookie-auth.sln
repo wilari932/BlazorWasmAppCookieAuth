@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wsamcookieauth.Server", "Server\wsamcookieauth.Server.csproj", "{9B242563-A1ED-42E9-85E6-DD2E48357007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wsamcookieauth.Client", "Client\wsamcookieauth.Client.csproj", "{3D029BA5-B6F1-46FC-A525-E3D74D5FA71E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wsamcookieauth.Shared", "Shared\wsamcookieauth.Shared.csproj", "{AC81418F-07B6-49B8-963E-4707F77F0F65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B242563-A1ED-42E9-85E6-DD2E48357007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B242563-A1ED-42E9-85E6-DD2E48357007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B242563-A1ED-42E9-85E6-DD2E48357007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B242563-A1ED-42E9-85E6-DD2E48357007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D029BA5-B6F1-46FC-A525-E3D74D5FA71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D029BA5-B6F1-46FC-A525-E3D74D5FA71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D029BA5-B6F1-46FC-A525-E3D74D5FA71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D029BA5-B6F1-46FC-A525-E3D74D5FA71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC81418F-07B6-49B8-963E-4707F77F0F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC81418F-07B6-49B8-963E-4707F77F0F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC81418F-07B6-49B8-963E-4707F77F0F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC81418F-07B6-49B8-963E-4707F77F0F65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6052A113-5E84-4833-9C4D-745153233D73}
+	EndGlobalSection
+EndGlobal
