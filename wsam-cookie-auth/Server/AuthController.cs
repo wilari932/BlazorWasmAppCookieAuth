@@ -14,11 +14,11 @@ namespace wsamcookieauth.Server;
 public class AuthController : ControllerBase
 {
     private readonly IdentityDataContext _applicationDbContext;
-    private readonly UserManager<IdentityUser> _userManager;
-    public AuthController(IdentityDataContext applicationDbContext,  UserManager<IdentityUser> userManager)
+    //private readonly UserManager<IdentityUser> _userManager;
+    public AuthController(IdentityDataContext applicationDbContext  )
     {
         _applicationDbContext = applicationDbContext;
-        _userManager = userManager;
+        //_userManager = userManager;
      
     }
     [Authorize]
@@ -29,14 +29,14 @@ public class AuthController : ControllerBase
         string userId = HttpContext.User.Claims.Where
             (_ => _.Type == ClaimTypes.NameIdentifier).Select(_ => _.Value).First();
 
-        var userProfile = await _userManager.GetUserAsync(User);
+        var userProfile = await _applicationDbContext.Users.FirstOrDefaultAsync(x => x.Id.Equals(userId));
         
         return Ok(new UserProfileDto
         {
             UserId = userProfile.Id,
             Email = userProfile.Email,
             Name = userProfile.UserName,
-            Role = (await _userManager.GetRolesAsync(userProfile)).FirstOrDefault()
+            //Role = (await _userManager.GetRolesAsync(userProfile)).FirstOrDefault()
         });
     }
 }
